@@ -1,24 +1,7 @@
 # vantan-todo-app
 
-## Project setup
-```
-yarn install
-```
+10 分クオリティ作るよてい TODO アプリの例
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+デプロイ
 
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+https://vantan-todo-app-demo.web.app/#/
