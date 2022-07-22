@@ -67,6 +67,19 @@ export default {
       input: "",
     };
   },
+  created() {
+    const todoData = localStorage.getItem("TODO");
+    const todoDataArray = JSON.parse(todoData);
+    this.todoList = todoDataArray;
+  },
+  watch: {
+    todoList: {
+      handler() {
+        localStorage.setItem("TODO", JSON.stringify(this.todoList));
+      },
+      deep: true,
+    },
+  },
   computed: {
     completeTodoList() {
       return this.todoList.filter((item) => item.checked);
